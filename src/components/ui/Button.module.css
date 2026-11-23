@@ -1,0 +1,40 @@
+.button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: min(100%, 342px);
+  min-width: var(--touch-target-min, 44px);
+  min-height: var(--touch-target-min, 44px);
+  padding: 15px 16px;
+  border: 1px solid transparent;
+  border-radius: var(--card-radius, 12px);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--color-navy, #0b2a5b);
+  color: var(--color-white, #fff);
+}
+
+.secondary {
+  border-color: var(--color-navy, #0b2a5b);
+  background-color: var(--color-white, #fff);
+  color: var(--color-navy, #0b2a5b);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-navy, #0b2a5b);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
